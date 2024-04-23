@@ -1,0 +1,190 @@
+/* Código general para quitar bordes, espacios y establecer el tipo y tamaño de fuente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; /* Ajuste del tamaño de fuente predeterminado */
+}
+
+/* Código para estética general/responsiva */
+/* Clase padre */
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Extra de márgenes */
+.margen {
+    padding: 0 20px; /* Reducción del margen */
+}
+
+/* Código superior de la página */
+.top {
+    background: url(../image/hero.png) center/cover; /* Simplificación de la propiedad background */
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Coso de barra-variables */
+.barra {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    flex: 3; /* Simplificación */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #6d54ea;
+}
+
+.barra-contenido {
+    flex: 2; /* Simplificación */
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.barra-contenido a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.barra-contenido a:hover {
+    color: #a88dd3;
+}
+
+/* Coso de barra-principal */
+.texto-principal {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra-principal_1 {
+    color: #fff;
+    text-align: center;
+}
+
+.barra-principal_1 a:hover {
+    color: #0cf93f;
+}
+
+/* Código principal de la página */
+.mid {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Código inferior de la página */
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.texto-final {
+    text-align: center;
+}
+
+/* Código Responsivo */
+/* Establecer cambios de código cuando la pantalla tiene un ancho de 948px */
+@media all and (max-width: 948px) {
+    .mid,
+    .barra {
+        flex-direction: column;
+    }
+    .barra {
+        height: auto;
+    }
+    .barra-principal_1 {
+        font-size: 15px;
+    }
+}
+
+/* Establecer cambios de código cuando la pantalla tiene un ancho de 600px */
+@media all and (max-width: 600px) {
+    .section-1,
+    .barra {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Establecer cambios de código cuando la pantalla tiene un ancho de 400px */
+@media all and (max-width: 400px) {
+    .section-1,
+    .barra {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Código Extra */
+/* Diseño de Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Simplificación del espacio de bordes */
+}
+
+th, td {
+    padding: 10px; /* Ajuste del relleno */
+    text-align: left; /* Simplificación */
+}
+
+.refe {
+    border: 1px solid #696767;
+    border-radius: 5px;
+}
+
+th {
+    background: #00cb11;
+    color: #fff;
+}
+
+.titulo, th, td {
+    font-size: 16px; /* Ajuste del tamaño de fuente */
+}
+
+.contenido:hover {
+    background: #7f7ba0;
+    border-radius: 20px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Corrección para un borde circular */
+}
+
+.imgp {
+    height: 200px;
+    width: 150px;
+}
+
+body {
+    background-color: #401b94ef; /* Negro */
+}
